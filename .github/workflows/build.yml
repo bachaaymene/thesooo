@@ -14,7 +14,6 @@ jobs:
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v3
         with:
-          working_directory: Thesis_ICD
           root_file: main.tex
           latexmk_shell_escape: true
           args: -pdf -bibtex -file-line-error -interaction=nonstopmode
@@ -23,4 +22,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: these-pdf
-          path: Thesis_ICD/main.pdf
+          path: main.pdf
