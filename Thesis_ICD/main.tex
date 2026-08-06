@@ -85,31 +85,31 @@
 %\typein [\files]{Enter file names to process, (chap1,chap2 ...), or `all' to process all files:}
 \def\all{all}
 % \ifx\files\all \typeout{Including all files.} \else %\typeout{Including only \files.} 
-% \includeonly{Thesis_ICD/chap3.tex} 
+% \includeonly{chap3.tex} 
 %\input{myacronyms.tex}
 \raggedbottom
 \begin{document}
 
 %\printacronyms %where you want the acronym list to appear, e.g. inside content.tex.
-\include{Thesis_ICD/coverrr.tex}
+\include{coverrr.tex}
 
 % Some departments (e.g. 5) require an additional signature page.  See
 % signature.tex for more information and uncomment the following line if
 % applicable.
-\include{Thesis_ICD/signature}
+\include{signature}
 \pagestyle{plain}
 
 \include{contents}
-\include{Thesis_ICD/chap1.tex}
-\include{Thesis_ICD/chap2.tex}
-\include{Thesis_ICD/chap3.tex}
-\include{Thesis_ICD/chap4.tex}
-\include{Thesis_ICD/chap5.tex}
-\include{Thesis_ICD/chap6.tex}
-\include{Thesis_ICD/chap7.tex}
-% \include{Thesis_ICD/try.tex}
+\include{chap1.tex}
+\include{chap2.tex}
+\include{chap3.tex}
+\include{chap4.tex}
+\include{chap5.tex}
+\include{chap6.tex}
+\include{chap7.tex}
+% \include{try.tex}
 
-\bibliography{Thesis_ICD/main.bib}
+\bibliography{main}
 \bibliographystyle{unsrt}
 \end{document}
 
